@@ -2,7 +2,6 @@
 import random
 
 comp_choice = ['Rock', 'Paper', 'Scissors']
-
 print('''\nThis is a ROCK, PAPER, SCISSORS game
 You will compete against computer which will randomly generate rock, paper or scissors
 Whoever scores 3 points first will win the match''')
@@ -14,7 +13,7 @@ comp_points = 0
 user_points = 0
 
 def outcomes():
-    result1 = "User Wins!"
+    result1 = f"{user_name} Wins!"
     result2 = "Computer Wins!"
     result3 = "TIE!"
     if(comp_move == 'Rock' and user_move == '1'):
@@ -49,16 +48,16 @@ Press 3 for Scissors\n''')
             print(f'''\n{user_name} has chosen Rock and computer has chosen {comp_move}
 Doing Rock v/s {comp_move} and....''')
             print(outcomes())
-            if(outcomes() == "User Wins!"):
+            if(outcomes() == f"{user_name} Wins!"):
                 user_points += 1
-                print("\nUser points:",user_points)
+                print(f"\n{user_name}'s points:",user_points)
                 print("Computer points:", comp_points)
             elif(outcomes() == "Computer Wins!"):
                 comp_points += 1
-                print("\nUser points:", user_points)
+                print(f"\n{user_name}'s points:", user_points)
                 print("Computer points:",comp_points)
             else:
-                print("\nUser points:", user_points)
+                print(f"\n{user_name}'s points:", user_points)
                 print("Computer points:", comp_points)
 
 
@@ -66,16 +65,16 @@ Doing Rock v/s {comp_move} and....''')
             print(f'''\n{user_name} has chosen Paper and computer has chosen {comp_move}
 Doing Paper v/s {comp_move} and....''')
             print(outcomes())
-            if (outcomes() == "User Wins!"):
+            if (outcomes() == f"{user_name} Wins!"):
                 user_points += 1
-                print("\nUser points:", user_points)
+                print(f"\n{user_name}'s points:", user_points)
                 print("Computer points:", comp_points)
             elif (outcomes() == "Computer Wins!"):
                 comp_points += 1
-                print("\nUser points:", user_points)
+                print(f"\n{user_name}'s points:", user_points)
                 print("Computer points:", comp_points)
             else:
-                print("\nUser points:", user_points)
+                print(f"\n{user_name}'s points:", user_points)
                 print("Computer points:", comp_points)
 
 
@@ -83,16 +82,16 @@ Doing Paper v/s {comp_move} and....''')
             print(f'''\n{user_name} has chosen Scissors and computer has chosen {comp_move}
 Doing Scissors v/s {comp_move} and....''')
             print(outcomes())
-            if (outcomes() == "User Wins!"):
+            if (outcomes() == f"{user_name} Wins!"):
                 user_points += 1
-                print("\nUser points:", user_points)
+                print(f"\n{user_name}'s points:", user_points)
                 print("Computer points:", comp_points)
             elif (outcomes() == "Computer Wins!"):
                 comp_points += 1
-                print("\nUser points:", user_points)
+                print(f"\n{user_name}'s points:", user_points)
                 print("Computer points:", comp_points)
             else:
-                print("\nUser points:", user_points)
+                print(f"\n{user_name}'s points:", user_points)
                 print("Computer points:", comp_points)
     elif(user_move == ''):
         print("Please enter something!")

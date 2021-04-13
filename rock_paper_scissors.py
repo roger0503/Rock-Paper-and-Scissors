@@ -100,8 +100,8 @@ Doing Scissors v/s {comp_move} and....''')
         print("Please enter a valid choice!")
 
     if(user_points == 3):
-            print(f"{user_name} wins this round!")
+            print(f"{user_name} wins the match!")
             break
     elif(comp_points == 3):
-            print("Computer wins this round")
+            print("Computer wins the match!")
             break
